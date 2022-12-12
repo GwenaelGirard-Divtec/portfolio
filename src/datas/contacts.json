@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Instagram",
+        "username": "gwn_grd",
+        "url": "https://www.instagram.com/gwn_grd/",
+        "img": "logo/instagram.png"
+    },
+    {
+        "name": "Mail",
+        "username": "gwenael@girard-pro.ch",
+        "url": "mailto:gwenael@girard-pro.ch",
+        "img": "logo/mail.png"
+    },
+    {
+        "name": "Behance",
+        "username": "gwenaelgirard",
+        "url": "https://www.behance.net/gwenalgirard",
+        "img": "logo/behance.png"
+    }
+]

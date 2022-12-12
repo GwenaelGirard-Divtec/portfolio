@@ -1,30 +1,61 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <router-view />
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+    box-sizing: border-box;
+    font-family: $body-font;
+    color: $color;
 }
 
-nav {
-  padding: 30px;
+html {
+  scroll-behavior: smooth;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+body {
+    background-color: $background;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+section {
+    color: red;
+    padding: 16px;
+    min-height: calc(100vh - $navbar-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+    font-family: $heading-font;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2em;
+    border-bottom: 2px solid $color;
+}
+
+.glass {
+    $glass-color: $color;
+    $glass-opacity: 0.2;
+    $glass-blur: 2px;
+    background: rgba(red($glass-color), green($glass-color), blue($glass-color), $glass-opacity);
+    -webkit-backdrop-filter: blur($glass-blur);
+    backdrop-filter: blur($glass-blur);
+    border: 1px solid rgba(red($glass-color), green($glass-color), blue($glass-color), $glass-opacity / 2);
+}
+
+.glass-dark {
+    $glass-color: $background;
+    $glass-opacity: 0.2;
+    $glass-blur: 2px;
+    background: rgba(red($glass-color), green($glass-color), blue($glass-color), $glass-opacity);
+    -webkit-backdrop-filter: blur($glass-blur);
+    backdrop-filter: blur($glass-blur);
+    border: 1px solid rgba(red($glass-color), green($glass-color), blue($glass-color), $glass-opacity / 2);
 }
 </style>
